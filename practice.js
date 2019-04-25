@@ -36,18 +36,18 @@ let devMountainGoal = null;
 //plus the value of the name parameter.
 
 //Code here
-function greeting() {
-  console.log("Hello, " + myName);
+function greeting(name) {
+  return "Hello, " + name;
 }
-greeting();
+greeting(name);
 //////////////////PROBLEM 7////////////////////
 
 //Rewrite the function greeting as a function expression.
 //Name it newGreeting.
 
 //Code Here
-let newGreeting = function(){
-  console.log("Hello, " + myName);
+let newGreeting = function(name){
+  return "Hello, " + name;
 }
 //////////////////PROBLEM 8////////////////////
 
@@ -65,8 +65,8 @@ let groceries = ["apples", "milk", "eggs", "bread"];
 
 //Code Here
 let dog = {
-  name: "Bobby",
-  color: "brown",
+  name: 'Bobby',
+  color: 'brown',
   age: 3,
   goodBoy: true
 };
@@ -74,8 +74,8 @@ let dog = {
 //variable called devMountainClassPet.
 
 //Code Here
-let devMountainClassPet = 'name';
-dog[devMountainClassPet];
+let devMountainClassPet = dog.name;
+
 //////////////////PROBLEM 10////////////////////
 
 //Write a function called nameCheck that takes in a name parameter.
@@ -90,7 +90,7 @@ function nameCheck(n) {
   if (n==='Steven') {
     return 'What is up Steven?';
   } else if (n==='Bryan') {
-    return 'Hey Bryan';
+    return 'Hey Bryan!';
   } else {
     return 'Cool name, ' + n
   }
